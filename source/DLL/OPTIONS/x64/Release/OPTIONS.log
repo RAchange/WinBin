@@ -1,1 +1,9 @@
-﻿
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+     正在建立程式庫 D:\WinBin\bin\x64\OPTIONS.lib 和物件 D:\WinBin\bin\x64\OPTIONS.exp
+  正在產生程式碼
+  Previous IPDB not found, fall back to full compilation.
+  All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  OPTIONS.vcxproj -> D:\WinBin\bin\x64\OPTIONS.dll
+  D:\WinBin\bin\x64\OPTIONS.lib
+  已複製 1 個檔案

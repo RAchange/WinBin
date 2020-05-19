@@ -1,3 +1,4 @@
-.vscode/**
-*DEBUG/*
-*Release/*
+**/.vscode/**
+**/DEBUG/*
+**/Release/*
+.vs/**

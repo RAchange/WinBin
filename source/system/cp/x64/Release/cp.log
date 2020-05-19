@@ -1,1 +1,11 @@
-﻿
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+  cp.cpp
+D:\WinBin\source\system\cp\cp.cpp(26,5): error C2665: 'strrchr': 沒有任何 2 多載可以轉換所有引數類型
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(516,28): message : 可能是 'char *strrchr(char *const ,const int)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\vcruntime_string.h(76,38): message : 或       'const char *strrchr(const char *,int)'
+D:\WinBin\source\system\cp\cp.cpp(26,5): message : 當嘗試符合引數清單 '(LPTSTR, char)' 時
+D:\WinBin\source\system\cp\cp.cpp(27,22): error C2440: '=': 無法由 'LPTSTR' 轉換為 'PCHAR'
+D:\WinBin\source\system\cp\cp.cpp(27,21): message : 指向的類型沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或函式樣式轉換
+D:\WinBin\source\system\cp\cp.cpp(33,52): error C2664: 'int sprintf_s(char *const ,const size_t,const char *const ,...)': 無法將引數 1 從 'TCHAR [260]' 轉換為 'char *const '
+D:\WinBin\source\system\cp\cp.cpp(33,13): message : 指向的類型沒有相關; 轉換必須有 reinterpret_cast、C-Style 轉換或函式樣式轉換
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1833,41): message : 請參閱 'sprintf_s' 的宣告

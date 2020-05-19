@@ -1,10 +1,9 @@
 ﻿// cp.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 //
-#include <windows.h>
-#include <stdio.h>
+#include "Everything.h"
 #define BUF_SIZE 16384  /* Optimal in several experiments. Small values such as 256 give very bad performance */
 
-int main(int argc, LPTSTR argv[])
+int _tmain(int argc, LPTSTR argv[])
 {
 	HANDLE hIn, hOut;
 	DWORD nIn, nOut;
@@ -30,7 +29,7 @@ int main(int argc, LPTSTR argv[])
 	DWORD dwAttr = GetFileAttributes(argv[2]);
 
 	if (dwAttr & FILE_ATTRIBUTE_DIRECTORY) {
-		sprintf_s(lpOutFile, "%s\\%s", argv[2], pfilename);
+		sprintf(lpOutFile, "%s\\%s", argv[2], pfilename);
 	}
 
 	hOut = CreateFile(lpOutFile, GENERIC_WRITE, 0, NULL,

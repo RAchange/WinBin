@@ -1,1 +1,24 @@
-﻿
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+  正在產生程式碼
+  Previous IPDB not found, fall back to full compilation.
+  All 2 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  cat.vcxproj -> D:\WinBin\bin\x64\cat.exe
+  找不到 D:\WinBin\bin\x64\*.lib
+  找不到 D:\WinBin\bin\x64\*.exp
+  D:\WinBin\bin\x64\mv.iobj
+  系統找不到指定的檔案。
+  D:\WinBin\bin\x64\pwd.iobj
+  系統找不到指定的檔案。
+  D:\WinBin\bin\x64\rm.iobj
+  系統找不到指定的檔案。
+  D:\WinBin\bin\x64\tail.iobj
+  系統找不到指定的檔案。
+  D:\WinBin\bin\x64\time.iobj
+  系統找不到指定的檔案。
+  D:\WinBin\bin\x64\touch.iobj
+  系統找不到指定的檔案。
+  找不到 D:\WinBin\bin\x64\*.ipdb
+  D:\WinBin\bin\x64\hexdump.pdb
+  程序無法存取檔案，因為檔案正由另一個程序使用。
+  找不到 D:\WinBin\bin\x64\*.pri

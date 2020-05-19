@@ -1,0 +1,16 @@
+D:\WinBin\bin\x64\GETARGS.pri
+D:\WinBin\source\DLL\GETARGS\x64\Release\priconfig.xml
+D:\WinBin\source\DLL\GETARGS\x64\Release\priconfig.xml.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\unfiltered.layout.resfiles
+D:\WinBin\source\DLL\GETARGS\x64\Release\unfiltered.layout.resfiles.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\filtered.layout.resfiles
+D:\WinBin\source\DLL\GETARGS\x64\Release\filtered.layout.resfiles.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\excluded.layout.resfiles
+D:\WinBin\source\DLL\GETARGS\x64\Release\excluded.layout.resfiles.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\resources.resfiles
+D:\WinBin\source\DLL\GETARGS\x64\Release\resources.resfiles.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\pri.resfiles
+D:\WinBin\source\DLL\GETARGS\x64\Release\pri.resfiles.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\qualifiers.txt
+D:\WinBin\source\DLL\GETARGS\x64\Release\qualifiers.txt.intermediate
+D:\WinBin\source\DLL\GETARGS\x64\Release\MultipleQualifiersPerDimensionFound.txt
