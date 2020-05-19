@@ -1,4 +1,2 @@
 **/.vscode/**
-**/DEBUG/*
-**/Release/*
-.vs/**
+*.log
