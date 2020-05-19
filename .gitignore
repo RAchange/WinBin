@@ -1,2 +1,6 @@
-.vscode\**
-*DEBUG\*
+.vscode/**
+*DEBUG/*
+*Release/*
+*log/**
+*.log
+*.txt
