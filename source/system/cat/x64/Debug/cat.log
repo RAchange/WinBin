@@ -1,0 +1,16 @@
+﻿  OPTIONS.C
+D:\WinBin\utility\OPTIONS.C(17,1): warning C4273: 'Options': 不一致的 DLL 連結
+D:\WinBin\include\support.h(65,15): message : 請參閱 'Options' 之前的定義
+  REPRTERR.C
+D:\WinBin\utility\REPRTERR.C(12,1): warning C4273: 'ReportError': 不一致的 DLL 連結
+D:\WinBin\include\support.h(63,14): message : 請參閱 'ReportError' 之前的定義
+D:\WinBin\utility\REPRTERR.C(19,15): warning C4047: '函式': 'LPSTR' 與 'LPTSTR *' 間接取值的層級不同
+D:\WinBin\utility\REPRTERR.C(19,15): warning C4024: 'FormatMessageA': 型式和實質參數 5 不同的類型
+D:\WinBin\utility\REPRTERR.C(45,1): warning C4273: 'ReportException': 不一致的 DLL 連結
+D:\WinBin\include\support.h(64,14): message : 請參閱 'ReportException' 之前的定義
+  正在產生程式碼...
+  cat.cpp
+     正在建立程式庫 D:\WinBin\bin\Debug\cat.lib 和物件 D:\WinBin\bin\Debug\cat.exp
+LINK : warning LNK4217: 函式 'ReportError' 中的 'REPRTERR.obj' 已匯入在 'cat.obj' 中定義的符號 'main'
+LINK : warning LNK4217: 函式 'Options' 中的 'OPTIONS.obj' 已匯入在 'cat.obj' 中定義的符號 'main'
+  cat.vcxproj -> D:\WinBin\bin\Debug\cat.exe

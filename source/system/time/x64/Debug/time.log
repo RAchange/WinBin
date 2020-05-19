@@ -1,0 +1,5 @@
+﻿  REPRTERR.C
+D:\WinBin\utility\REPRTERR.C(1,10): fatal error C1083: 無法開啟包含檔案: 'Everything.h': No such file or directory
+  SKIPARG.C
+D:\WinBin\utility\SKIPARG.C(5,10): fatal error C1083: 無法開啟包含檔案: 'Everything.h': No such file or directory
+  正在產生程式碼...

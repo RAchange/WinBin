@@ -1,0 +1,4 @@
+﻿  JOBMGT.cpp
+D:\WinBin\include\Environment.h(20,1): warning C4005: '_UNICODE': 巨集重複定義
+D:\WinBin\astsu\JOBMGT.cpp : message : 請參閱 '_UNICODE' 之前的定義
+  astsu.vcxproj -> D:\WinBin\bin\Debug\astsu.exe

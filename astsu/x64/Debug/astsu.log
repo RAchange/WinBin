@@ -1,0 +1,21 @@
+﻿  astsu.cpp
+D:\WinBin\include\Environment.h(20,1): warning C4005: '_UNICODE': 巨集重複定義
+D:\WinBin\astsu\astsu.cpp : message : 請參閱 '_UNICODE' 之前的定義
+D:\WinBin\astsu\astsu.cpp(28,35): warning C4101: 'originCmd': 未參考的區域變數
+D:\WinBin\astsu\astsu.cpp(211,11): warning C4477: 'wprintf' : 格式字串 '%d' 需要 'int' 類型的引數，但 variadic 引數 1 的類型為 'LONGLONG'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%lld'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%Id'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%I64d'
+D:\WinBin\astsu\astsu.cpp(211,11): warning C4477: 'wprintf' : 格式字串 '%03d' 需要 'int' 類型的引數，但 variadic 引數 2 的類型為 'LONGLONG'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%lld'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%Id'
+D:\WinBin\astsu\astsu.cpp(211,11): message : 請考慮在格式字串中使用 '%I64d'
+     正在建立程式庫 D:\WinBin\bin\Debug\astsu.lib 和物件 D:\WinBin\bin\Debug\astsu.exp
+LINK : warning LNK4217: 函式 'ReportError' 中的 'REPRTERR.obj' 已匯入在 'VersionOK.obj' 中定義的符號 'WindowsVersionOK'
+LINK : warning LNK4286: 'ReportError' 已匯入在 'REPRTERR.obj' 中定義的符號 'astsu.obj'
+LINK : warning LNK4286: 'ReportError' 已匯入在 'REPRTERR.obj' 中定義的符號 'JOBMGT.obj'
+LINK : warning LNK4217: 函式 'Options' 中的 'OPTIONS.obj' 已匯入在 'astsu.obj' 中定義的符號 '"int __cdecl Jobbg(int,wchar_t * *,wchar_t *)" (?Jobbg@@YAHHPEAPEA_WPEA_W@Z)'
+LINK : warning LNK4217: 函式 'SkipArg' 中的 'SKIPARG.obj' 已匯入在 'astsu.obj' 中定義的符號 '"int __cdecl Jobbg(int,wchar_t * *,wchar_t *)" (?Jobbg@@YAHHPEAPEA_WPEA_W@Z)'
+LINK : warning LNK4217: 函式 'WindowsVersionOK' 中的 'VersionOK.obj' 已匯入在 'astsu.obj' 中定義的符號 'wmain'
+LINK : warning LNK4217: 函式 'GetArgs' 中的 'GETARGS.obj' 已匯入在 'astsu.obj' 中定義的符號 'wmain'
+  astsu.vcxproj -> D:\WinBin\bin\Debug\astsu.exe

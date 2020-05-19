@@ -1,0 +1,20 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
+  REPRTERR.C
+D:\WinBin\include\Environment.h(20,1): warning C4005: '_UNICODE': 巨集重複定義
+D:\WinBin\utility\REPRTERR.C : message : 請參閱 '_UNICODE' 之前的定義
+D:\WinBin\utility\REPRTERR.C(12,1): warning C4273: 'ReportError': 不一致的 DLL 連結
+D:\WinBin\include\support.h(63,14): message : 請參閱 'ReportError' 之前的定義
+D:\WinBin\utility\REPRTERR.C(19,15): warning C4047: '函式': 'LPWSTR' 與 'LPTSTR *' 間接取值的層級不同
+D:\WinBin\utility\REPRTERR.C(19,15): warning C4024: 'FormatMessageW': 型式和實質參數 5 不同的類型
+D:\WinBin\utility\REPRTERR.C(45,1): warning C4273: 'ReportException': 不一致的 DLL 連結
+D:\WinBin\include\support.h(64,14): message : 請參閱 'ReportException' 之前的定義
+  cd.cpp
+D:\WinBin\include\Environment.h(20,1): warning C4005: '_UNICODE': 巨集重複定義
+D:\WinBin\source\system\cd\cd.cpp : message : 請參閱 '_UNICODE' 之前的定義
+D:\WinBin\source\system\cd\cd.cpp(16,6): warning C4267: '引數': 將 'size_t' 轉換為 'DWORD'，資料可能遺失
+     正在建立程式庫 D:\WinBin\bin\x64\cd.lib 和物件 D:\WinBin\bin\x64\cd.exp
+  正在產生程式碼
+  Previous IPDB not found, fall back to full compilation.
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成程式碼產生
+  cd.vcxproj -> D:\WinBin\bin\x64\cd.exe
