@@ -42,6 +42,9 @@
     <ClCompile Include="..\..\..\utility\ezfile.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\utility\REPRTERR.C">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EZAES.h">

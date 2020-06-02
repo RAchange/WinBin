@@ -1,19 +1,4 @@
 ﻿// ls.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-/* lsW[options][files]
-	List the attributes of one or more files.
-	Options:
-		-R	recursive
-		-l	longList listing(size and time of modification)
-			Depending on the ProcessItem function, this will
-			also list the owner and permissions(See Chapter 5 - security). */
-
-			/* This program illustrates:
-					1.	Search handles and directory traversal
-					2.	File attributes, including time
-					3.	Using generic string functions to output file information */
-					/* THIS PROGRAM IS NOT A FAITHFUL IMPLEMENATION OF THE POSIX ls COMMAND - IT IS INTENDED TO ILLUSRATE THE WINDOWS API */
-					/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-					/* BEGIN BOILERPLATE CODE */
 
 #include "Everything.h"
 

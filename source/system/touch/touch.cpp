@@ -1,18 +1,4 @@
 ﻿// touch.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
-/* Modified Sept 2, 2005 to fix the -a and -m logic
-	 Modified again Jan 4, 2016 - the 2005 change was too complex.*/
-	 /* touch[options] files
-		 Update the access and modification times of the files.
-		 Create non-existent files.
-		 Options:
-			 -a Only update the access time.
-			 -m Only update the modification (last write) time.
-					  But, both are allowed, so the "only" is not accurate.
-			 -c Do not create a non-existent file. */
-
-			 /* This program illustrates:
-				 1. Setting the file time attributes.
-				 2. Converting from system to file time. */
 
 #include "Everything.h"
 

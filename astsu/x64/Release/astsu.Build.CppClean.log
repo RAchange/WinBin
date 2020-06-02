@@ -1,6 +1,12 @@
+d:\winbin\bin\x64\astsu.lib
+d:\winbin\bin\x64\astsu.exp
 d:\winbin\bin\x64\astsu.ipdb
 d:\winbin\bin\x64\astsu.iobj
 d:\winbin\astsu\x64\release\vc142.pdb
+d:\winbin\astsu\x64\release\skiparg.obj
+d:\winbin\astsu\x64\release\reprterr.obj
+d:\winbin\astsu\x64\release\options.obj
+d:\winbin\astsu\x64\release\getargs.obj
 d:\winbin\astsu\x64\release\jobmgt.obj
 d:\winbin\astsu\x64\release\astsu.obj
 d:\winbin\bin\x64\astsu.exe

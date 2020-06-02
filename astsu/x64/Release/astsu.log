@@ -1,10 +1,1 @@
-﻿  正在產生程式碼
-  Previous IPDB not found, fall back to full compilation.
-  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  已完成程式碼產生
-  astsu.vcxproj -> D:\WinBin\bin\x64\astsu.exe
-  找不到 D:\WinBin\bin\x64\*.lib
-  找不到 D:\WinBin\bin\x64\*.exp
-  找不到 D:\WinBin\bin\x64\*.iobj
-  找不到 D:\WinBin\bin\x64\*.ipdb
-  找不到 D:\WinBin\bin\x64\*.pri
+﻿

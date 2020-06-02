@@ -21,5 +21,17 @@
     <ClCompile Include="JOBMGT.cpp">
       <Filter>來源檔案</Filter>
     </ClCompile>
+    <ClCompile Include="..\utility\REPRTERR.C">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\GETARGS.C">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\SKIPARG.C">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utility\OPTIONS.C">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

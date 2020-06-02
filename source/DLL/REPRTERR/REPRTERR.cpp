@@ -3,6 +3,7 @@
 
 #include "Everything.h"
 
+
 __declspec(dllexport)
 VOID ReportError(LPCTSTR userMessage, DWORD exitCode, BOOL printErrorMessage)
 

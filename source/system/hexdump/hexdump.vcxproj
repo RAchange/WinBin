@@ -102,7 +102,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>REPRTERR.lib;OPTIONS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OPTIONS.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>del $(OutDir)*.lib
@@ -159,7 +159,7 @@ del $(OutDir)*.pri</Command>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>REPRTERR.lib;OPTIONS.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>OPTIONS.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>del $(OutDir)*.lib
@@ -176,6 +176,7 @@ del $(OutDir)*.pri</Command>
   <ItemGroup>
     <ClCompile Include="..\..\..\utility\ezfile.cpp" />
     <ClCompile Include="..\..\..\utility\hexdump.cpp" />
+    <ClCompile Include="..\..\..\utility\REPRTERR.C" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

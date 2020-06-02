@@ -2,14 +2,6 @@
 /* timeprint: Execute a command line and display
 	the time (elapsed, kernel, user) required. */
 
-	/* This program illustrates:
-		1. Creating processes.
-		2. Obtaining the command line.
-		3. Obtaining the elapsed times.
-		4. Converting file times to system times.
-		5. Displaying system times.
-			Windows only. */
-
 #include "Everything.h"
 
 int _tmain(int argc, LPTSTR argv[])

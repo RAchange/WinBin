@@ -1,3 +1,1 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(453,5): warning MSB8004: Output 目錄結尾不是結尾斜線。這個建置執行個體將會加入此斜線，因為這樣才能正確評估 Output 目錄。
-     正在建立程式庫 D:\WinBin\bin\x64\VersionOK.lib 和物件 D:\WinBin\bin\x64\VersionOK.exp
-LINK : fatal error LNK1181: 無法開啟輸入檔 'D:\WinBin\bin\x64\VersionOK.exp'
+﻿

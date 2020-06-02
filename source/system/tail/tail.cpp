@@ -2,14 +2,6 @@
 /* tail file - Print the last 10 lines of the named file.
 	All options are ignored. The file must be specified. */
 
-/* This program illustrates:
-	1. Getting the file size.
-	2. Setting the file pointer.
-	3. LARGE_INTEGER arithmetic and using the 64-bit file positions.
-	4. Getting the current file position by moving
-		0 bytes from the current position. */
-
-			
 #include "Everything.h"
 
 #define NUM_LINES 11
@@ -88,7 +80,7 @@ int _tmain(int argc, LPTSTR argv[])
 
 	ReadFile(hInFile, buffer, MAX_CHAR * sizeof(TCHAR), &nRead, &ov);
 	buffer[nRead / sizeof(TCHAR)] = _T('\0');
-	PrintMsg(hStdOut, buffer);
+	_tprintf(_T("%s"), buffer);
 	CloseHandle(hInFile);
 	return 0;
 }

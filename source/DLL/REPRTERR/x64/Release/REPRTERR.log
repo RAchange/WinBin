@@ -5,11 +5,13 @@
   All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成程式碼產生
   REPRTERR.vcxproj -> D:\WinBin\bin\x64\REPRTERR.dll
-  找不到檔案 - REPRTERR.lib
-  已複製 0 個檔案
-  找不到 D:\WinBin\bin\x64\*.lib
-  找不到 D:\WinBin\bin\x64\*.exp
-  找不到 D:\WinBin\bin\x64\*.iobj
-  找不到 D:\WinBin\bin\x64\*.ipdb
-  找不到 D:\WinBin\bin\x64\*.pdb
-  找不到 D:\WinBin\bin\x64\*.pri
+  D:\WinBin\bin\x64\REPRTERR.lib
+  已複製 1 個檔案
+  D:\WinBin\bin\x64\GETARGS.exp
+  程序無法存取檔案，因為檔案正由另一個程序使用。
+  D:\WinBin\bin\x64\GETARGS.iobj
+  程序無法存取檔案，因為檔案正由另一個程序使用。
+  D:\WinBin\bin\x64\OPTIONS.pdb
+  程序無法存取檔案，因為檔案正由另一個程序使用。
+  D:\WinBin\bin\x64\SKIPARG.pdb
+  程序無法存取檔案，因為檔案正由另一個程序使用。

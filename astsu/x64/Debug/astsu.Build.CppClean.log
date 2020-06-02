@@ -2,13 +2,13 @@ d:\winbin\bin\debug\astsu.lib
 d:\winbin\bin\debug\astsu.exp
 d:\winbin\astsu\x64\debug\vc142.pdb
 d:\winbin\astsu\x64\debug\vc142.idb
+d:\winbin\astsu\x64\debug\versionok.obj
 d:\winbin\astsu\x64\debug\skiparg.obj
 d:\winbin\astsu\x64\debug\reprterr.obj
 d:\winbin\astsu\x64\debug\options.obj
 d:\winbin\astsu\x64\debug\getargs.obj
 d:\winbin\astsu\x64\debug\jobmgt.obj
 d:\winbin\astsu\x64\debug\astsu.obj
-d:\winbin\astsu\x64\debug\versionok.obj
 d:\winbin\bin\debug\astsu.ilk
 d:\winbin\bin\debug\astsu.exe
 d:\winbin\bin\debug\astsu.pdb
@@ -17,6 +17,5 @@ d:\winbin\astsu\x64\debug\astsu.tlog\cl.command.1.tlog
 d:\winbin\astsu\x64\debug\astsu.tlog\cl.read.1.tlog
 d:\winbin\astsu\x64\debug\astsu.tlog\cl.write.1.tlog
 d:\winbin\astsu\x64\debug\astsu.tlog\link.command.1.tlog
-d:\winbin\astsu\x64\debug\astsu.tlog\link.delete.1.tlog
 d:\winbin\astsu\x64\debug\astsu.tlog\link.read.1.tlog
 d:\winbin\astsu\x64\debug\astsu.tlog\link.write.1.tlog

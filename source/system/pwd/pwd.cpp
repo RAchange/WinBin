@@ -1,8 +1,5 @@
 ﻿// pwd.cpp : 此檔案包含 'main' 函式。程式會於該處開始執行及結束執行。
 /* pwd: Print the current directory. */
-/* This program illustrates:
-	1. Windows GetCurrentDirectory
-	2. Testing the length of a returned string */
 
 #include "Everything.h"
 

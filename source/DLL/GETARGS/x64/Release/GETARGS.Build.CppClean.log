@@ -3,6 +3,10 @@ d:\winbin\source\dll\getargs\x64\release\vc142.pdb
 d:\winbin\source\dll\getargs\x64\release\pch.obj
 d:\winbin\source\dll\getargs\x64\release\dllmain.obj
 d:\winbin\source\dll\getargs\x64\release\getargs.obj
+d:\winbin\bin\x64\getargs.lib
+d:\winbin\bin\x64\getargs.exp
+d:\winbin\bin\x64\getargs.ipdb
+d:\winbin\bin\x64\getargs.iobj
 d:\winbin\source\dll\getargs\x64\release\priconfig.xml
 d:\winbin\source\dll\getargs\x64\release\priconfig.xml.intermediate
 d:\winbin\source\dll\getargs\x64\release\unfiltered.layout.resfiles
@@ -20,6 +24,7 @@ d:\winbin\source\dll\getargs\x64\release\qualifiers.txt
 d:\winbin\source\dll\getargs\x64\release\qualifiers.txt.intermediate
 d:\winbin\source\dll\getargs\x64\release\multiplequalifiersperdimensionfound.txt
 d:\winbin\bin\x64\getargs.dll
+d:\winbin\bin\x64\getargs.pdb
 d:\winbin\source\dll\getargs\x64\release\getargs.tlog\cl.command.1.tlog
 d:\winbin\source\dll\getargs\x64\release\getargs.tlog\cl.read.1.tlog
 d:\winbin\source\dll\getargs\x64\release\getargs.tlog\cl.write.1.tlog

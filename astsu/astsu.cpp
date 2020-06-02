@@ -1,16 +1,4 @@
-﻿/* astsu.cpp One program combining three
-job management commands:
-	Jobbg	- Run a job in the background
-	jobs	- List all background jobs
-	kill	- Terminate a specified job of job family
-			  There is an option to generate a console
-			  control signal.
-	This implemenation enhances JobShell with a time limit on each process.
-		There is a time limit on each process, in seconds, in argv[1] (if present)
-		0 or omitted means no process time limit
-*/
-
-#include "Everything.h"
+﻿#include "Everything.h"
 #include "JobManagement.h"
 
 #define MILLION 1000000
@@ -18,9 +6,12 @@ static int Jobbg(int, LPTSTR*, LPTSTR);
 static int Jobs(int, LPTSTR*, LPTSTR);
 static int Kill(int, LPTSTR*, LPTSTR);
 static int PipeChain(int, LPTSTR*, LPTSTR);
+static BOOL EventHandler(DWORD);
 HANDLE hJobObject = NULL;
 
 JOBOBJECT_BASIC_LIMIT_INFORMATION basicLimits = { 0, 0, JOB_OBJECT_LIMIT_PROCESS_TIME };
+
+LPPROCESS_INFORMATION lpCur = NULL;
 
 int _tmain(int argc, LPTSTR argv[])
 {
@@ -30,6 +21,8 @@ int _tmain(int argc, LPTSTR argv[])
 	DWORD i, localArgc;
 	TCHAR argstr[MAX_ARG][MAX_COMMAND_LINE];
 	LPTSTR pArgs[MAX_ARG];
+
+	SetConsoleCtrlHandler(EventHandler, TRUE);
 
 	/* NT Only - due to file locking */
 	if (!WindowsVersionOK(3, 1))
@@ -98,15 +91,18 @@ int _tmain(int argc, LPTSTR argv[])
 				// _ftprintf(stderr, _T("%s : Command Not Found\n"), argstr[0]);
 				_tsystem((LPCTSTR)command);
 			}
+			lpCur = lpProcessInfo;
 			if(lpProcessInfo->hProcess!=INVALID_HANDLE_VALUE) 
 				WaitForSingleObject(lpProcessInfo->hProcess, INFINITE);
 			delete lpStartUp;
 			delete lpProcessInfo;
+			lpCur = NULL;
 		}
 	}
 
 	CloseHandle(hJobObject);
 
+	SetConsoleCtrlHandler(EventHandler, FALSE);
 	return 0;
 }
 
@@ -142,7 +138,6 @@ int Jobbg(int argc, LPTSTR argv[], LPTSTR command)
 	STARTUPINFO startUp;
 	PROCESS_INFORMATION processInfo;
 	LPTSTR targv;
-	_tprintf(_T("%s\n"), argv[0]);
 	targv = SkipArg(command, 1, argc, argv);
 	
 
@@ -156,6 +151,8 @@ int Jobbg(int argc, LPTSTR argv[], LPTSTR command)
 	   Also, commands can't start with -. etc. You may want to fix this. */
 	if (argv[1][0] == _T('-'))
 		targv = SkipArg(command, 2, argc, argv);
+
+	// targv = _tcsstr(, _T("jobbg")) + 6;
 
 	fCreate = flags[0] ? CREATE_NEW_CONSOLE : flags[1] ? DETACHED_PROCESS : 0;
 
@@ -199,17 +196,6 @@ int Jobbg(int argc, LPTSTR argv[], LPTSTR command)
 	return 0;
 }
 
-/* Jobs: List all running or stopped jobs that have
-	been created by this user under job management;
-	that is, have been started with the jobbg command.
-	Related commands (jobbg and kill) can be used to manage the jobs. */
-	/* This new features this program illustrates:
-		1. Determining process status.
-		2. Maintaining a Jobs/Process list in a shared file.
-		3. Obtaining job object information
-	 */
-
-
 int Jobs(int argc, LPTSTR argv[], LPTSTR command)
 {
 	JOBOBJECT_BASIC_ACCOUNTING_INFORMATION basicInfo;
@@ -227,20 +213,6 @@ int Jobs(int argc, LPTSTR argv[], LPTSTR command)
 
 	return 0;
 }
-
-/* kill [options] jobNumber
-	Terminate the process associated with the specified job number. */
-	/* This new features this program illustrates:
-		1. Using TerminateProcess
-		2. Console control events */
-
-		/* Options:
-			-b  Generate a Ctrl-Break
-			-c  Generate a Ctrl-C
-				Otherwise, terminate the process. */
-
-				/* The Job Management data structures, error codes,
-					constants, and so on are in the following file. */
 
 int Kill(int argc, LPTSTR argv[], LPTSTR command)
 {
@@ -340,6 +312,7 @@ static int PipeChain(int argc, LPTSTR argv[], LPTSTR cLine)
 		0, NULL, NULL, &startInfoCh1, &procInfo1)) {
 		ReportError(_T("CreateProc1 failed."), 4, TRUE);
 	}
+	lpCur = &procInfo1;
 	CloseHandle(procInfo1.hThread);
 	CloseHandle(hWritePipe);
 
@@ -364,5 +337,32 @@ static int PipeChain(int argc, LPTSTR argv[], LPTSTR cLine)
 	WaitForSingleObject(procInfo2.hProcess, INFINITE);
 	CloseHandle(procInfo1.hProcess);
 	CloseHandle(procInfo2.hProcess);
+	lpCur = NULL;
 	return 0;
+}
+
+static BOOL EventHandler(DWORD dwCtrlType)
+{
+	switch (dwCtrlType)
+	{
+	case CTRL_C_EVENT:
+		if (lpCur == NULL) break;
+		TerminateProcess(lpCur->hProcess, JM_EXIT_CODE);
+		_tprintf(_T("\nKeyInterrupt : the process has been terminated.\n"));
+		lpCur = NULL;
+		break;
+	case CTRL_CLOSE_EVENT:
+		if (lpCur != NULL) TerminateProcess(lpCur->hProcess, JM_EXIT_CODE);
+		TerminateProcess(GetCurrentProcess(), JM_EXIT_CODE);
+		break;
+	case CTRL_BREAK_EVENT:
+		break;
+	case CTRL_LOGOFF_EVENT:
+		break;
+	case CTRL_SHUTDOWN_EVENT:
+		if (lpCur != NULL) TerminateProcess(lpCur->hProcess, JM_EXIT_CODE);
+		TerminateProcess(GetCurrentProcess(), JM_EXIT_CODE);
+		break;
+	}
+	return TRUE;
 }

@@ -5,6 +5,10 @@ d:\winbin\source\dll\skiparg\x64\release\skiparg.obj
 d:\winbin\source\dll\skiparg\x64\release\dllmain.obj
 d:\winbin\bin\x64\skiparg.dll
 d:\winbin\bin\x64\skiparg.pdb
+d:\winbin\bin\x64\skiparg.lib
+d:\winbin\bin\x64\skiparg.exp
+d:\winbin\bin\x64\skiparg.ipdb
+d:\winbin\bin\x64\skiparg.iobj
 d:\winbin\source\dll\skiparg\x64\release\priconfig.xml
 d:\winbin\source\dll\skiparg\x64\release\priconfig.xml.intermediate
 d:\winbin\source\dll\skiparg\x64\release\unfiltered.layout.resfiles

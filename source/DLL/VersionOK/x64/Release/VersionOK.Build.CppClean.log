@@ -4,6 +4,11 @@ d:\winbin\source\dll\versionok\x64\release\pch.obj
 d:\winbin\source\dll\versionok\x64\release\dllmain.obj
 d:\winbin\source\dll\versionok\x64\release\versionok.obj
 d:\winbin\bin\x64\versionok.dll
+d:\winbin\bin\x64\versionok.pdb
+d:\winbin\bin\x64\versionok.lib
+d:\winbin\bin\x64\versionok.exp
+d:\winbin\bin\x64\versionok.ipdb
+d:\winbin\bin\x64\versionok.iobj
 d:\winbin\source\dll\versionok\x64\release\priconfig.xml
 d:\winbin\source\dll\versionok\x64\release\priconfig.xml.intermediate
 d:\winbin\source\dll\versionok\x64\release\unfiltered.layout.resfiles
